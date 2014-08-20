@@ -1,0 +1,40 @@
+// Import external mixin libraries
+@import ( less ) '../../bower_components/normalize-css/normalize.css';
+@import '../../bower_components/lesshat/build/lesshat';
+
+html, body { height: 100%; }
+
+#example {
+
+	background: fadeout( black, 97% );
+	height: 100%;
+
+	.column {
+
+		text-align: center;
+
+		height: 100%;
+
+		@media( max-width: 480px ) { max-height: 3em; }
+
+	}
+
+	& > .column {
+
+		background: fadeout( lime, 90% );
+
+		.column {
+
+			background: fadeout( red, 80% );
+
+			.column {
+
+				background: fadeout( blue, 80% );
+
+			}
+
+		}
+
+	}
+
+}

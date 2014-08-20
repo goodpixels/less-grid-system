@@ -1,0 +1,25 @@
+{
+  "name": "less-grid-system",
+  "description": "Super-easy to use, markup-independent LESS grid system.",
+  "version": "0.0.1",
+  "keywords": [
+    "css",
+    "less",
+    "responsive",
+    "grid",
+    "system",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://goodpixels.co.uk/less-grid-system",
+  "author": "John Przeslakowski",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "lesshat": "*",
+    "normalize-css": "*"
+  }
+}

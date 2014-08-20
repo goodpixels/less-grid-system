@@ -1,0 +1,118 @@
+/*! LESS grid system v0.0.1 | (c) 2014 John Przeslakowski | Code released under the MIT license | goodpixels.co.uk/less-grid-system */
+
+@import 'mixins';
+
+// Defaults
+@gridBreakpoint:	480px;
+@gridColumnCount:	12;
+@gridGutter:		20;
+@gridColumn:		80;
+
+#dynamicGrid( @columnCount: @gridColumnCount; @column: @gridColumn; @gutter: @gridGutter; @breakpoint: @gridBreakpoint ) {
+
+	@columnsTotal: ( @column * @columnCount );
+	@guttersTotal: @gutter * ( @columnCount - 1 );
+
+	@total: @columnsTotal + @guttersTotal;
+
+	@columnWidth: ( @column / @total ) * 100%;
+	@gutterWidth: ( @gutter / @total ) * 100%;
+
+	// Internal mixins, not intended to be called from outside the #grid instance
+	.drawRow( @number: 1 ) {
+
+		@parentWidth: ( @column * @number ) + ( @gutter * ( @number - 1 ) );
+
+		overflow: hidden;
+
+		height: 100%;
+		width: ( @total / @parentWidth ) * 100%;
+
+	}
+
+	.drawColumn( @arguments ) {
+
+		float: left;
+		margin-right: @gutterWidth;
+		overflow: visible;
+
+		width: ( @columnWidth * @number ) + ( @gutterWidth * ( @number - 1 ) );
+
+	}
+
+	.drawColumn( @arguments ) when ( @responsive = true ) {
+
+		@media( max-width: @breakpoint ) {
+
+			.clearfix;
+
+			display: block;
+			float: none;
+			margin: 0 auto;
+
+			width: auto;
+
+		}
+
+	}
+
+	.drawColumn( @arguments ) when ( @autoClearMargin = true ) {
+
+	 	&:last-of-type { margin-right: 0; }
+
+	}
+
+	// Public mixins
+	.container() {
+
+		.clearfix;
+
+		margin: auto;
+		overflow: visible;
+		position: relative;
+
+		width: @total + 0px;
+
+		&.overflow-hidden { overflow: hidden; }
+
+		@media( max-width: @breakpoint ) { width: auto; }
+
+	}
+
+	.column( @number: 1; @responsive: true; @autoClearMargin: true ) { .drawColumn( @arguments ); }
+
+	.columnOuter( @number: 1; @responsive: true; @autoClearMargin: true ) {
+
+		.drawColumn( @arguments );
+
+		// Required for nested grids
+		overflow: hidden;
+
+		.row { .drawRow( @number ); }
+
+	}
+
+	.push( @number: 1 ) {
+
+	 	margin-left: ( @columnWidth * @number ) + ( @gutterWidth * @number );
+
+	 	@media( max-width: @breakpoint ) { margin-left: 0; }
+
+	}
+
+	.pull( @number: 1 ) {
+
+	 	margin-left: -( ( @columnWidth * @number ) + ( @gutterWidth * @number ) );
+
+	 	@media( max-width: @breakpoint ) { margin-left: 0; }
+
+	}
+	
+
+}
+
+// Initialize grid
+#grid { #dynamicGrid; }
+
+// Initialize the container
+.container { #grid > .container; }

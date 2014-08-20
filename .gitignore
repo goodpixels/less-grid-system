@@ -1,0 +1,9 @@
+# Files
+.DS_Store
+Thumbs.db
+npm-debug.log
+
+# Folders
+.codekit_cache
+bower_components
+node_modules

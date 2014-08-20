@@ -1,0 +1,40 @@
+// Import LESS grid system
+@import '../../src/grid';
+
+#example {
+
+	.column {
+
+		&.left {
+
+			#grid > .columnOuter( 8 );
+
+			.column {
+
+				&.inner-left { #grid > .column( 3 ); }
+
+				&.inner-right { #grid > .column( 5 ); }
+
+			}
+
+		}
+
+		&.right {
+
+			#grid > .columnOuter( 4 );
+
+			.column {
+
+				&.inner-left { #grid > .column( 1, false ); } // or explicitly: #grid > .column( 1, false );
+
+				&.inner-middle { #grid > .column( 2, false ); } // or explicitly: #grid > .column( 2, false );
+
+				&.inner-right { #grid > .column( 1, false ); } // or explicitly: #grid > .column( 1, false );
+
+			}
+
+		}
+
+	}
+
+}

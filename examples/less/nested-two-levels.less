@@ -1,0 +1,30 @@
+// Import LESS grid system
+@import '../../src/grid';
+
+#example {
+
+	.column {
+
+		&.left { #grid > .column( 4 ); }
+		
+		&.right {
+
+			#grid > .columnOuter( 8 );
+
+			.column {
+
+				#grid > .columnOuter( 4, false ); // or explicitly: #grid > .column( 4, @responsive: false );
+
+				&.left {
+
+					.column { #grid > .column( 2, false ); } // or explicitly: #grid > .column( 2, @responsive: false );
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

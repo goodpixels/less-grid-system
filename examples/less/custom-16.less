@@ -1,0 +1,10 @@
+// Import LESS grid system
+@import '../../src/grid';
+
+#grid16 { #dynamicGrid( 16, 55, 20 ); }
+
+#example {
+
+	.column { #grid16 > .column; }
+
+}

@@ -1,0 +1,42 @@
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+
+	*zoom: 1;
+	
+	&:before,
+	&:after {
+		
+		content: '';
+		display: table;
+
+	}
+
+	&:after { clear: both; }
+
+}
+
+// Lists - can be used as inline classes
+.list-remove-bullets() {
+
+	list-style-type: none;
+	padding: 0;
+
+}
+
+// Inline list
+.list-inline() {
+
+	.clearfix;
+	.list-remove-bullets;
+
+	line-height: 1;
+
+	li {
+
+		display: inline-block;
+		float: left;
+		line-height: 1;
+
+	}
+
+}
