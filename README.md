@@ -174,17 +174,17 @@ You will also need to wrap inner columns in a new element, giving it the `.row` 
 ## Examples
 
 
-* [Default](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/default.html) [ [source](examples/less/default.less) ]
-* [Custom (16 columns)](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/custom-16.html) [ [source](examples/less/custom-16.less) ]
-* [Custom (24 columns)](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/custom-24.html) [ [source](examples/less/custom-24.less) ]
-* [Fluid](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/fluid.html) [ [source](examples/less/fluid.less) ]
-* [Four columns](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/four-columns.html) [ [source](examples/less/four-columns.less) ]
-* [Pull](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/pull.html) [ [source](examples/less/pull.less) ]
-* [Push](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/push.html) [ [source](examples/less/push.less) ]
-* [Sidebar](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/sidebar.html) [ [source](examples/less/sidebar.less) ]
-* [Double sidebar](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/sidebar-double.html) [ [source](examples/less/sidebar-double.less) ]
-* [One level nested](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/nested-one-level.html) [ [source](examples/less/nested-one-level.less) ]
-* [Two levels nested](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/test/master/examples/nested-two-levels.html) [ [source](examples/less/nested-two-levels.less) ]
+* [Default](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/default.html) [ [source](examples/less/default.less) ]
+* [Custom (16 columns)](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/custom-16.html) [ [source](examples/less/custom-16.less) ]
+* [Custom (24 columns)](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/custom-24.html) [ [source](examples/less/custom-24.less) ]
+* [Fluid](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/fluid.html) [ [source](examples/less/fluid.less) ]
+* [Four columns](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/four-columns.html) [ [source](examples/less/four-columns.less) ]
+* [Pull](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/pull.html) [ [source](examples/less/pull.less) ]
+* [Push](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/push.html) [ [source](examples/less/push.less) ]
+* [Sidebar](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/sidebar.html) [ [source](examples/less/sidebar.less) ]
+* [Double sidebar](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/sidebar-double.html) [ [source](examples/less/sidebar-double.less) ]
+* [One level nested](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/nested-one-level.html) [ [source](examples/less/nested-one-level.less) ]
+* [Two levels nested](http://htmlpreview.github.io/?https://raw.githubusercontent.com/goodpixels/less-grid-system/master/examples/nested-two-levels.html) [ [source](examples/less/nested-two-levels.less) ]
 
 ## Acknowledgements
 
