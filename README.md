@@ -36,7 +36,7 @@ or [NPM](https://www.npmjs.org/):
 npm install less-grid-system
 ```
 
-or download the source code from [GitHub](https://github.com/goodpixels/less-grid-system/zipball/master)
+or download the source code from [GitHub](https://github.com/goodpixels/less-grid-system/zipball/master).
 
 ## Basic usage
 
